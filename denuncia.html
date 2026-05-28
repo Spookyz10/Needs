@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="site-name">
+        <h1>Corpo Livre</h1>
+        <p>Um espaço para quem cuida e para quem é cuidado.</p>
+      </div>
+    </header>
+
+    <div class="nav">
+      <nav class="nav-items">
+        <a href="index.html">Foruns</a>
+        <a href="quiz.html">Me Conhecer</a>
+        <a href="denuncia.html">Denuncia</a>
+        <a href="FAQ.html">FAQ</a>
+      </nav>
+    </div>
+
+    <br />
+
+    <main class="post-page">
+      <section class="post-page-header">
+        <h2 class="post-page-title">Denúncia</h2>
+        <p>Use este formulário para enviar uma denúncia, pode ser anônima.</p>
+      </section>
+
+      <section class="report-form">
+        <form id="denunciaForm">
+          <label for="nome">Nome (opcional)</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" />
+
+          <label for="email">Email (opcional)</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="seu@email.com"
+          />
+
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria">
+            <option>Assédio</option>
+            <option>Conteúdo impróprio</option>
+            <option>Spam</option>
+            <option>Outro</option>
+          </select>
+
+          <label for="descricao">Descrição</label>
+          <textarea
+            id="descricao"
+            name="descricao"
+            rows="6"
+            required
+            placeholder="Descreva o que ocorreu..."
+          ></textarea>
+
+          <label for="anexo">Anexo (opcional)</label>
+          <input id="anexo" name="anexo" type="file" />
+
+          <div style="margin-top: 12px">
+            <button type="submit">Enviar denúncia</button>
+          </div>
+        </form>
+
+        <p
+          id="formMsg"
+          style="
+            display: none;
+            margin-top: 12px;
+            color: #27632a;
+            font-weight: bold;
+          "
+        >
+          Obrigado! sua denúncia foi registrada (simulada).
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  background-color: #1c784a;
+  background-color: #a65d57;
 }
 
 .site-name {
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 .site-name h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
-  color: beige;
+  color: #f4ede4;
   font-size: 50px;
 }
 
@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
   height: 25px;
   position: sticky;
   top: 0;
-  background-color: #26a362;
+  background-color: #c97b63;
 }
 
 .nav-items {
@@ -77,11 +77,11 @@ body::-webkit-scrollbar {
 }
 
 .nav-items a:hover {
-  background-color: rgb(59, 255, 59);
+  background-color: rgb(255, 200, 61);
 }
 
 body {
-  background: #272725;
+  background: #ffe5dd;
 }
 .foruns {
   display: flex;
@@ -99,9 +99,9 @@ body {
   align-items: stretch;
   width: 95%;
   min-height: 80px;
-  background-color: #1f1f1d;
+  background-color: #a65d57;
   border-radius: 10px;
-  border: 2px solid #40403e;
+  border: 4px solid #c97b63;
   overflow: hidden;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .post-top a:hover {
-  color: #73feb2;
+  color: #ffc3b1;
   text-decoration: underline;
 }
 
@@ -140,14 +140,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #cdeada;
-  border: 2px solid #73feb2;
+  background-color: #e7b977;
+  border: 2px solid #ffe5c0;
   border-radius: 20px;
   padding: 2px 12px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #1c784a;
+  color: #492b00;
 }
 
 .post-body p {
@@ -178,7 +178,7 @@ body {
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #73feb2;
+  border: 2px solid #e7b977;
   flex-shrink: 0;
 }
 
@@ -245,7 +245,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: white;
+  color: #a65d57;
 }
 
 .pagination {
@@ -274,27 +274,27 @@ body {
 }
 
 .page-btn:hover {
-  background-color: #26a362;
-  border-color: #73feb2;
+  background-color: #a65d57;
+  border-color: #fd988f;
 }
 
 .page-btn.active {
-  background-color: #1c784a;
-  border-color: #73feb2;
-  color: #73feb2;
+  background-color: #a65d57;
+  border-color: #fd988f;
+  color: #fd988f;
 }
 
 .page-btn.next {
   padding: 0 14px;
-  background-color: #26a362;
+  background-color: #a65d57;
 }
 
 .post-entry {
   display: flex;
   align-items: stretch;
-  background-color: #1f1f1d;
+  background-color: #a65d57;
   border-radius: 10px;
-  border: 2px solid #40403e;
+  border: 4px solid #c97b63;
   overflow: hidden;
 }
 
@@ -306,7 +306,7 @@ body {
   width: 140px;
   flex-shrink: 0;
   padding: 20px 12px;
-  background-color: #1a1a18;
+  background-color: #73403c;
   border-right: 2px solid #40403e;
   text-align: center;
 }
@@ -316,14 +316,14 @@ body {
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #73feb2;
+  border: 2px solid #fd988f;
 }
 
 .sidebar-name {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #26a362;
+  color: #fd988f;
 }
 
 .sidebar-role {
@@ -360,4 +360,132 @@ body {
   font-size: 15px;
   color: #cccccc;
   line-height: 1.7;
+}
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.quiz h2 {
+  color: #a65d57;
+  font-size: 40px;
+}
+
+.quiz p {
+  color: #a65d57;
+  font-size: 20px;
+  text-align: center;
+}
+
+.quiz button {
+  background-color: #a65d57;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 1px #322c2b;
+  border: #1a1a18 2px solid;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.quiz button:hover {
+  box-shadow: 0 0 20px #c97b63;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.report-form label {
+  font-family: "Inter", sans-serif;
+  color: #a65d57;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.report-form input[type="text"],
+.report-form input[type="email"],
+.report-form input[type="file"],
+.report-form select,
+.report-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #c97b63;
+  background: #fff7f4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #492b00;
+}
+
+.report-form input[type="text"]:focus,
+.report-form input[type="email"]:focus,
+.report-form input[type="file"]:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+  outline: none;
+  border-color: #a65d57;
+  box-shadow: 0 0 4px #e7b977;
+}
+
+.report-form textarea {
+  resize: vertical;
+}
+
+.report-form button {
+  background-color: #a65d57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.report-form button:hover {
+  background-color: #c97b63;
+  box-shadow: 0 0 12px rgba(199, 123, 99, 0.5);
+}
+
+.hot-text,
+.entry-body strong {
+  color: #fd988f;
+  font-weight: 800;
+}
+
+.faq-list .post-entry h3 {
+  color: #ffffff;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.faq-list .post-entry a {
+  color: #fd988f;
+  font-weight: bold;
+}
+
+.nav-items a.active {
+  background-color: #a65d57;
+  color: #fff;
+  border-bottom: 3px solid #fd988f;
+}
+
+.post-page-header p {
+  font-family: "Roboto", sans-serif;
+  color: #888888;
+  font-size: 14px;
 }
