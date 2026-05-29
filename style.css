@@ -376,7 +376,7 @@ body {
   font-size: 40px;
 }
 
-.quiz p {
+.quiztext {
   color: #a65d57;
   font-size: 20px;
   text-align: center;
@@ -488,4 +488,125 @@ body {
   font-family: "Roboto", sans-serif;
   color: #888888;
   font-size: 14px;
+}
+
+.pergunta {
+  background-color: #a65d57;
+  width: 600px;
+  gap: 10px;
+  margin-right: 300px;
+  margin-left: 300px;
+  border: 4px solid #c97b63;
+  border-radius: 20px;
+}
+
+.pergunta-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.questiontext {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.options label {
+  background-color: #c97b63;
+  border: 2px solid #ffb59e;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #492b00;
+  transition: 0.3s;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options label:hover {
+  background-color: #a65d57;
+  box-shadow: 0 0 12px rgba(166, 93, 87, 0.5);
+}
+
+.comentar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #a65d57;
+  border: 4px solid #c97b63;
+  border-radius: 10px;
+  padding: 24px 20px;
+  max-width: 100%;
+}
+
+.comentar h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fd988f;
+  margin: 0;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 2px solid #ffb59e;
+  background-color: #fff7f4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #492b00;
+  resize: vertical;
+  min-height: 120px;
+  transition: 0.3s;
+}
+
+.comment-input::placeholder {
+  color: #c97b63;
+  opacity: 0.8;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #a65d57;
+  box-shadow: 0 0 8px rgba(231, 185, 119, 0.4);
+  background-color: #fffaf8;
+}
+
+.comment-btn {
+  align-self: flex-start;
+  background-color: #e7b977;
+  color: #492b00;
+  padding: 10px 24px;
+  border: 2px solid #ffe5c0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-btn:hover {
+  background-color: #ffc3b1;
+  box-shadow: 0 0 12px rgba(231, 185, 119, 0.6);
+  transform: translateY(-2px);
 }
